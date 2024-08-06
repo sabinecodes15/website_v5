@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Default application files
+DefaultApp.css
+DefaultApp.tsx
+default-index.css

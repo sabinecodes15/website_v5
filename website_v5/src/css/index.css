@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    height: 100%;
+    /* color gradients considered */
+    /* background-image: linear-gradient(to bottom right, #213E44 30%, #1E373C); */
+    /* background-image: linear-gradient(to bottom right, #213E44, #182c30); */
+    /* background-image: linear-gradient(to right bottom, #213e44, #1f393f, #1c353a, #1a3035, #182c30); */
+    background-image: linear-gradient(to bottom right, #213E44 30%, #1A3136);
+}
