@@ -6,7 +6,11 @@ export default {
     "./src/components/*.{js,jsx,ts,tsx}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      minHeight: {
+        '60pct': '60%'
+      }
+    },
     colors: {
       'teal': {
         100: '#213E44',
