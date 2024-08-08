@@ -10,7 +10,7 @@ function Card({ children, size = "fit" }: Props) {
     <div
       className={
         "bg-teal-300 p-5 rounded shadow-xl " +
-        (size === "fit" ? "w-fit" : "w-full")
+        (size === "fit" ? "w-fit" : "w-full h-full")
       }
     >
       {children}

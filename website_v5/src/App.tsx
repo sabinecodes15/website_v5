@@ -1,5 +1,7 @@
+import Footer from "./components/Footer";
 import InfoCard from "./components/InfoCard";
 import NavBar from "./components/NavBar";
+import SkillsBlock from "./components/SkillsBlock";
 import SummaryBlock from "./components/SummaryBlock";
 import WorkHistoryCard from "./components/WorkHistoryCard";
 
@@ -20,6 +22,11 @@ function App() {
       <h1 className="text-white font-mono font-bold text-5xl tracking-wide m-12">
         Skills.
       </h1>
+      <div className="m-12">
+        <SkillsBlock />
+      </div>
+      <div className="h-12"></div>
+      <Footer />
     </>
   );
 }

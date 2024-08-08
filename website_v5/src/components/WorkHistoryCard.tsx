@@ -85,7 +85,7 @@ function WorkHistoryCard() {
             handleClick(i);
           }}
         >
-          <h3 className="text-light-blue-100 font-mont font-semibold">
+          <h3 className="text-light-blue-100 font-mont font-semibold tracking-wide">
             {pos.title}
           </h3>
           {/* replace with down arrow svg */}
