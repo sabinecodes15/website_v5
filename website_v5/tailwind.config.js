@@ -21,7 +21,9 @@ export default {
         100: '#B5D6DD',
         200: '#C2E5ED'
       },
-      'white': '#ECF9F8',
+      'white': {
+        100: '#ECF9F8', 
+        200: '#FFFFFF'},
     },
     fontFamily: {
       'mono':['Roboto Mono', 'ui-monospace'],

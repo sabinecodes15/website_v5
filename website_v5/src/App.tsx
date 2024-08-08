@@ -12,14 +12,20 @@ function App() {
       <div className="min-h-screen flex justify-center items-center">
         <InfoCard />
       </div>
-      <SummaryBlock />
-      <h1 className="text-white font-mono font-bold text-5xl tracking-wide m-12">
+      <div id="about">
+        <SummaryBlock />
+      </div>
+      <div id="experience"></div>
+      <h1 className="text-white-100 font-mono font-bold text-5xl tracking-wide m-12">
         Where I've Been.
       </h1>
       <div className="m-12">
         <WorkHistoryCard />
       </div>
-      <h1 className="text-white font-mono font-bold text-5xl tracking-wide m-12">
+      <h1
+        id="skills"
+        className="text-white-100 font-mono font-bold text-5xl tracking-wide m-12"
+      >
         Skills.
       </h1>
       <div className="m-12">

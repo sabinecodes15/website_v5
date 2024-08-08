@@ -4,11 +4,7 @@
 
 :root {
     height: 100%;
-    /* color gradients considered */
-    /* background-image: linear-gradient(to bottom right, #213E44 30%, #1E373C); */
-    /* background-image: linear-gradient(to bottom right, #213E44, #182c30); */
-    /* background-image: linear-gradient(to right bottom, #213e44, #1f393f, #1c353a, #1a3035, #182c30); */
-    background-image: linear-gradient(to bottom right, #213E44 30%, #1A3136);
+    background-image: linear-gradient(to bottom right, #1A3136, #213E44 30%, #1A3136);
     background-attachment: fixed;
     background-size: 100vw;
     max-width: 100%;

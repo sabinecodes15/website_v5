@@ -92,8 +92,8 @@ function WorkHistoryCard() {
           <p className="text-light-blue-100">v</p>
         </div>
         <div className="flex flex-row justify-between">
-          <p className="text-white font-mono">{pos.company}</p>
-          <p className="text-white font-mont text-sm italic">
+          <p className="text-white-100 font-mono">{pos.company}</p>
+          <p className="text-white-100 font-mont text-sm italic">
             {pos.start + " - " + pos.end}
           </p>
         </div>

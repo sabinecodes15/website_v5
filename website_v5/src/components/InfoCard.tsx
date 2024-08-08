@@ -14,7 +14,7 @@ const InfoCard = () => {
           Sabine Salnave.
         </h1>
         {spacer}
-        <h2 className="font-mono font-bold text-white text-2xl tracking-wide">
+        <h2 className="font-mono font-bold text-white-100 text-2xl tracking-wide">
           Full Stack Developer.
         </h2>
         {spacer}

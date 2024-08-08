@@ -8,7 +8,9 @@ const SkillsBlock = () => {
           <Card size="span">
             <div className="m-4 border border-light-blue-100 rounded">
               <div className="flex flex-col text-light-blue-100 font-mont items-center m-4">
-                <h3 className="text-white font-bold tracking-wide">Frontend</h3>
+                <h3 className="text-white-100 font-bold tracking-wide">
+                  Frontend
+                </h3>
                 <div className="h-2"></div>
                 <p>React</p>
                 <p>HTML</p>
@@ -24,7 +26,9 @@ const SkillsBlock = () => {
           <Card size="span">
             <div className="m-4 border border-light-blue-100 rounded">
               <div className="flex flex-col text-light-blue-100 font-mont items-center m-4">
-                <h3 className="text-white font-bold tracking-wide">Backend</h3>
+                <h3 className="text-white-100 font-bold tracking-wide">
+                  Backend
+                </h3>
                 <div className="h-2"></div>
                 <p>Python</p>
                 <p>Java</p>
@@ -40,7 +44,7 @@ const SkillsBlock = () => {
           <Card size="span">
             <div className="m-4 border border-light-blue-100 rounded">
               <div className="flex flex-col text-light-blue-100 font-mont items-center m-4">
-                <h3 className="text-white font-bold tracking-wide">
+                <h3 className="text-white-100 font-bold tracking-wide">
                   Infrastructure
                 </h3>
                 <div className="h-2"></div>
