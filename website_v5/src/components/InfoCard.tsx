@@ -8,7 +8,7 @@ const spacer = <div className="h-2" />;
 
 const InfoCard = () => {
   return (
-    <Card>
+    <Card size="fit">
       <>
         <h1 className="font-mono font-bold text-light-blue-100 text-5xl tracking-wide">
           Sabine Salnave.
