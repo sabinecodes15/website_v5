@@ -9,6 +9,9 @@ export default {
     extend: {
       minHeight: {
         '60pct': '60%'
+      },
+      height: {
+        '7ish': '29px'
       }
     },
     colors: {

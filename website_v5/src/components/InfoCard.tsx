@@ -1,8 +1,8 @@
 import Card from "./Card";
 import SocialButton from "./SocialButton";
-import GitHubLogo from "../assets/github.svg";
-import LinkedInLogo from "../assets/linkedin.svg";
-import EmailIcon from "../assets/email.svg";
+import EmailSVG from "./svg/EmailSVG";
+import LinkedInSVG from "./svg/LinkedInSVG";
+import GitHubSVG from "./svg/GitHubSVG";
 
 const spacer = <div className="h-2" />;
 
@@ -19,7 +19,6 @@ const InfoCard = () => {
         </h2>
         {spacer}
         <p className="font-mont text-light-blue-100 tracking-wide">
-          {" "}
           Recent CS grad who loves solving difficult problems.
         </p>
         {spacer}
@@ -27,22 +26,25 @@ const InfoCard = () => {
           <SocialButton
             outline={true}
             link="mailto:sdsalnave@icloud.com"
-            img={EmailIcon}
-            alt="Email"
+            img={
+              <EmailSVG classes="fill-light-blue-100 hover:fill-light-blue-200" />
+            }
           />
           <div className="w-5"></div>
           <SocialButton
             outline={true}
             link="https://www.linkedin.com/in/sabine-salnave-46716a169/"
-            img={LinkedInLogo}
-            alt="LinkedIn"
+            img={
+              <LinkedInSVG classes="fill-light-blue-100 hover:fill-light-blue-200" />
+            }
           />
           <div className="w-5"></div>
           <SocialButton
             outline={true}
             link="https://github.com/sabinecodes15"
-            img={GitHubLogo}
-            alt="GitHub"
+            img={
+              <GitHubSVG classes="fill-light-blue-100 hover:fill-light-blue-200" />
+            }
           />
         </div>
       </>

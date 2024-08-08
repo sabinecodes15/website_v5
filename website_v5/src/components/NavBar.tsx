@@ -1,6 +1,6 @@
-import GitHubLogo from "../assets/github.svg";
-import LinkedInLogo from "../assets/linkedin.svg";
-import EmailIcon from "../assets/email.svg";
+import EmailSVG from "./svg/EmailSVG";
+import GitHubSVG from "./svg/GitHubSVG";
+import LinkedInSVG from "./svg/LinkedInSVG";
 
 const NavBar = () => {
   return (
@@ -31,21 +31,25 @@ const NavBar = () => {
           target="_blank"
           className="flex h-full items-center hover:bg-teal-200 p-2"
         >
-          <img src={EmailIcon} alt="Email" className="h-6" />
+          <EmailSVG
+            classes="fill-white-100 hover:fill-white-200"
+            width="29"
+            height="29"
+          />
         </a>
         <a
           href="https://www.linkedin.com/in/sabine-salnave-46716a169/"
           target="_blank"
           className="flex h-full items-center hover:bg-teal-200 p-2"
         >
-          <img src={LinkedInLogo} alt="LinkedIn" className="h-6" />
+          <LinkedInSVG classes="fill-white-100 hover:fill-white-200 h-6" />
         </a>
         <a
           href="https://github.com/sabinecodes15"
           target="_blank"
           className="flex h-full items-center hover:bg-teal-200 p-2"
         >
-          <img src={GitHubLogo} alt="GitHub" className="h-6" />
+          <GitHubSVG classes="fill-white-100 hover:fill-white-200 h-6" />
         </a>
       </div>
     </div>

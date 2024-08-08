@@ -1,11 +1,12 @@
+import { ReactElement } from "react";
+
 interface Props {
   outline: boolean;
   link: string;
-  img?: string;
-  alt?: string;
+  img?: ReactElement;
 }
 
-const SocialButton = ({ outline, link, img, alt }: Props) => {
+const SocialButton = ({ outline, link, img }: Props) => {
   return (
     <a href={link} target="_blank">
       <div
@@ -16,15 +17,7 @@ const SocialButton = ({ outline, link, img, alt }: Props) => {
             : "")
         }
       >
-        {img ? (
-          <img
-            src={img}
-            className="min-h-60pct hover:fill-light-blue-200"
-            alt={alt}
-          ></img>
-        ) : (
-          ""
-        )}
+        {img}
       </div>
     </a>
   );
