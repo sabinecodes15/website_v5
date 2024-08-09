@@ -80,19 +80,19 @@ function NavBar() {
             </div>
             <a
               href="#about"
-              className="flex h-full items-center hover:bg-teal-200 hover:text-white-200 p-3 sm:text-lg lg:text-sm"
+              className="flex h-full items-center hover:bg-teal-200 hover:text-white-200 px-3 py-10 text-3xl sm:text-lg lg:text-sm"
             >
               Who I am.
             </a>
             <a
               href="#experience"
-              className="flex h-full items-center hover:bg-teal-200  hover:text-white-200 p-3 sm:text-lg lg:text-sm"
+              className="flex h-full items-center hover:bg-teal-200  hover:text-white-200 px-3 py-10 text-3xl sm:text-lg lg:text-sm"
             >
               Where I've Been.
             </a>
             <a
               href="#skills"
-              className="flex h-full items-center hover:bg-teal-200 hover:text-white-200 p-3 sm:text-lg lg:text-sm"
+              className="flex h-full items-center hover:bg-teal-200 hover:text-white-200 px-3 py-10 text-3xl sm:text-lg lg:text-sm"
             >
               Skills.
             </a>
