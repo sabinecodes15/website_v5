@@ -3,7 +3,7 @@ import Card from "./Card";
 const SkillsBlock = () => {
   return (
     <>
-      <div className="flex flex-row">
+      <div className="flex lg:flex-row flex-col">
         <div className="m-2 basis-1/3">
           <Card size="span">
             <div className="m-4 border border-light-blue-100 rounded">
@@ -52,8 +52,8 @@ const SkillsBlock = () => {
                 <p>Docker</p>
                 <p>Kubernetes</p>
                 <p>Terraform</p>
-                <p className="text-teal-300">_____</p>
-                <p className="text-teal-300">_____</p>
+                <p className="text-teal-300 lg:block hidden">_____</p>
+                <p className="text-teal-300 lg:block hidden">_____</p>
               </div>
             </div>
           </Card>

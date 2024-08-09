@@ -12,7 +12,7 @@ type Position = {
   active: boolean;
 };
 
-function WorkHistoryCard() {
+function WorkHistory() {
   const amazon: Position = {
     id: "amazon",
     title: "Software Development Engineering Intern",
@@ -79,38 +79,45 @@ function WorkHistoryCard() {
 
   function dropdowns(positions: Position[]) {
     return positions.map((pos, i) => (
-      <div key={pos.id}>
+      <div key={pos.id + "-dropdown"}>
         <div
-          className="flex flex-row justify-between items-center"
           onClick={() => {
             handleClick(i);
           }}
         >
-          <h3 className="text-light-blue-100 font-mont font-semibold tracking-wide">
-            {pos.title}
-          </h3>
-          <MenuArrowSVG
-            classes={
-              "fill-light-blue-100 hover:fill-light-blue-200 " +
-              (pos.active ? "rotate-180" : "")
+          <div className="flex flex-row justify-between items-center">
+            <h3 className="text-light-blue-100 font-mont font-semibold tracking-wide">
+              {pos.title}
+            </h3>
+            <MenuArrowSVG
+              classes={
+                "fill-light-blue-100 hover:fill-light-blue-200 " +
+                (pos.active ? "rotate-180" : "")
+              }
+            />
+          </div>
+          <div className="flex flex-row justify-between">
+            <p className="text-white-100 font-mono">{pos.company}</p>
+            <p className="text-white-100 font-mont text-sm italic">
+              {pos.start + " - " + pos.end}
+            </p>
+          </div>
+          <div
+            className={
+              "text-light-blue-100 font-mont " + (pos.active ? "" : "hidden")
             }
-          />
+          >
+            <div className="h-2"></div>
+            <ul>
+              {pos.description.map((item, index) => (
+                <div key={pos.id + "-dropdown-description" + index}>
+                  <li key={pos.id + index}>{item}</li>
+                  <div key={pos.id + index + "spacer"} className="h-2"></div>
+                </div>
+              ))}
+            </ul>
+          </div>
         </div>
-        <div className="flex flex-row justify-between">
-          <p className="text-white-100 font-mono">{pos.company}</p>
-          <p className="text-white-100 font-mont text-sm italic">
-            {pos.start + " - " + pos.end}
-          </p>
-        </div>
-        <ul
-          className={
-            "text-light-blue-100 font-mont " + (pos.active ? "" : "hidden")
-          }
-        >
-          {pos.description.map((item, index) => (
-            <li key={pos.id + index}>{item}</li>
-          ))}
-        </ul>
         {i !== positions.length - 1 ? (
           <div className="h-px my-2 bg-light-blue-100"></div>
         ) : null}
@@ -118,7 +125,46 @@ function WorkHistoryCard() {
     ));
   }
 
-  return <Card size="span">{dropdowns(positionList)}</Card>;
+  function cards(positions: Position[]) {
+    return positions.map((pos, i) => (
+      <div key={pos.id + "-card"}>
+        <Card size="span">
+          <>
+            <h3 className="text-light-blue-100 font-mont font-semibold tracking-wide text-lg">
+              {pos.title}
+            </h3>
+            <div className="flex flex-row justify-between">
+              <p className="text-white-100 font-mono">{pos.company}</p>
+              <p className="text-white-100 font-mont text-sm italic">
+                {pos.start + " - " + pos.end}
+              </p>
+            </div>
+            <div className={"text-light-blue-100 font-mont"}>
+              <div className="h-4"></div>
+              <ul>
+                {pos.description.map((item, index) => (
+                  <div key={pos.id + "-card-description" + index}>
+                    <li key={pos.id + index}>{item}</li>
+                    <div key={pos.id + index + "spacer"} className="h-2"></div>
+                  </div>
+                ))}
+              </ul>
+            </div>
+          </>
+        </Card>
+        {i !== positions.length - 1 ? <div className="h-6 my-2"></div> : null}
+      </div>
+    ));
+  }
+
+  return (
+    <>
+      <div className="hidden sm:block">
+        <Card size="span">{dropdowns(positionList)}</Card>
+      </div>
+      <div className="block sm:hidden">{cards(positionList)}</div>
+    </>
+  );
 }
 
-export default WorkHistoryCard;
+export default WorkHistory;
