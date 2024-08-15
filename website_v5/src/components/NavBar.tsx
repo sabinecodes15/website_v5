@@ -17,19 +17,19 @@ function NavBar() {
       <div className="hidden sm:flex sm:flex-row text-white-100 font-mono font-medium">
         <a
           href="#about"
-          className="flex h-full items-center hover:bg-teal-200 hover:text-white-200 p-3 sm:text-lg lg:text-sm"
+          className="flex h-full items-center hover:bg-teal-200 hover:text-white-200 transition-colors p-3 sm:text-lg lg:text-sm"
         >
           Who I am.
         </a>
         <a
           href="#experience"
-          className="flex h-full items-center hover:bg-teal-200  hover:text-white-200 p-3 sm:text-lg lg:text-sm"
+          className="flex h-full items-center hover:bg-teal-200  hover:text-white-200 transition-colors p-3 sm:text-lg lg:text-sm"
         >
           Where I've Been.
         </a>
         <a
           href="#skills"
-          className="flex h-full items-center hover:bg-teal-200 hover:text-white-200 p-3 sm:text-lg lg:text-sm"
+          className="flex h-full items-center hover:bg-teal-200 hover:text-white-200 transition-colors p-3 sm:text-lg lg:text-sm"
         >
           Skills.
         </a>
@@ -43,7 +43,7 @@ function NavBar() {
         <a
           href="mailto:sdsalnave@icloud.com"
           target="_blank"
-          className="flex h-full items-center hover:bg-teal-200 p-2"
+          className="flex h-full items-center hover:bg-teal-200 p-2 transition-colors"
         >
           <EmailSVG
             classes="fill-white-100 hover:fill-white-200"
@@ -54,14 +54,14 @@ function NavBar() {
         <a
           href="https://www.linkedin.com/in/sabine-salnave-46716a169/"
           target="_blank"
-          className="flex h-full items-center hover:bg-teal-200 p-2"
+          className="flex h-full items-center hover:bg-teal-200 p-2 transition-colors"
         >
           <LinkedInSVG classes="fill-white-100 hover:fill-white-200 h-6" />
         </a>
         <a
           href="https://github.com/sabinecodes15"
           target="_blank"
-          className="flex h-full items-center hover:bg-teal-200 p-2"
+          className="flex h-full items-center hover:bg-teal-200 p-2 transition-colors"
         >
           <GitHubSVG classes="fill-white-100 hover:fill-white-200 h-6" />
         </a>
