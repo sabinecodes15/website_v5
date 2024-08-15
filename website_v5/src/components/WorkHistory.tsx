@@ -92,7 +92,9 @@ function WorkHistory() {
             <MenuArrowSVG
               classes={
                 "fill-light-blue-100 hover:fill-light-blue-200 " +
-                (pos.active ? "rotate-180" : "")
+                (pos.active
+                  ? "duration-300 rotate-180"
+                  : "duration-300 rotate-0")
               }
             />
           </div>
