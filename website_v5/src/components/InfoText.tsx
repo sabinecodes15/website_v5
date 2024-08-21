@@ -1,6 +1,6 @@
 const InfoText = () => {
   return (
-    <div className="mx-6 sm:mx-0">
+    <hgroup className="mx-6 sm:mx-0">
       <h1 className="font-mono font-bold text-light-blue-100 text-6xl sm:text-5xl tracking-wide">
         Sabine Salnave.
       </h1>
@@ -12,7 +12,7 @@ const InfoText = () => {
       <p className="font-mont text-light-blue-100 tracking-wide text-xl sm:text-lg">
         Recent CS grad who loves solving difficult problems.
       </p>
-    </div>
+    </hgroup>
   );
 };
 

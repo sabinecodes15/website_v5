@@ -5,10 +5,10 @@ const SkillsBlock = () => {
     <>
       <div className="flex lg:flex-row flex-col">
         <div className="m-2 basis-1/3">
-          <Card size="span">
-            <div className="m-4 border border-light-blue-100 rounded">
-              <div className="flex flex-col text-light-blue-100 font-mont items-center m-4">
-                <h3 className="text-white-100 font-bold tracking-wide">
+          <Card width="span" height="span">
+            <div className="border border-light-blue-100 rounded h-full">
+              <hgroup className="flex flex-col text-light-blue-100 font-mont items-center m-4 sm:text-sm lg:text-lg">
+                <h3 className="text-white-100 font-bold tracking-wide sm:text-xl lg:text-2xl">
                   Frontend
                 </h3>
                 <div className="h-2"></div>
@@ -18,15 +18,15 @@ const SkillsBlock = () => {
                 <p>Javascript</p>
                 <p>Figma</p>
                 <p>JQuery</p>
-              </div>
+              </hgroup>
             </div>
           </Card>
         </div>
         <div className="m-2 basis-1/3">
-          <Card size="span">
-            <div className="m-4 border border-light-blue-100 rounded">
-              <div className="flex flex-col text-light-blue-100 font-mont items-center m-4">
-                <h3 className="text-white-100 font-bold tracking-wide">
+          <Card width="span" height="span">
+            <div className="border border-light-blue-100 rounded h-full">
+              <hgroup className="flex flex-col text-light-blue-100 font-mont items-center m-4 sm:text-sm lg:text-lg">
+                <h3 className="text-white-100 font-bold tracking-wide sm:text-xl lg:text-2xl">
                   Backend
                 </h3>
                 <div className="h-2"></div>
@@ -36,15 +36,15 @@ const SkillsBlock = () => {
                 <p>Ruby on Rails</p>
                 <p>C</p>
                 <p>MySQL</p>
-              </div>
+              </hgroup>
             </div>
           </Card>
         </div>
         <div className="m-2 basis-1/3">
-          <Card size="span">
-            <div className="m-4 border border-light-blue-100 rounded">
-              <div className="flex flex-col text-light-blue-100 font-mont items-center m-4">
-                <h3 className="text-white-100 font-bold tracking-wide">
+          <Card width="span" height="span">
+            <div className="border border-light-blue-100 rounded h-full">
+              <hgroup className="flex flex-col text-light-blue-100 font-mont items-center m-4 sm:text-sm lg:text-lg">
+                <h3 className="text-white-100 font-bold tracking-wide sm:text-xl lg:text-2xl">
                   Infrastructure
                 </h3>
                 <div className="h-2"></div>
@@ -52,9 +52,7 @@ const SkillsBlock = () => {
                 <p>Docker</p>
                 <p>Kubernetes</p>
                 <p>Terraform</p>
-                <p className="text-teal-300 lg:block hidden">_____</p>
-                <p className="text-teal-300 lg:block hidden">_____</p>
-              </div>
+              </hgroup>
             </div>
           </Card>
         </div>

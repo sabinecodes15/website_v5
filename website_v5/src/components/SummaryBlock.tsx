@@ -1,11 +1,11 @@
 const SummaryBlock = () => {
   return (
     <div className="w-full min-h-fit bg-teal-300">
-      <div className="mx-6 sm:mx-12 py-12 flex flex-col sm:gap-12 gap-6">
-        <h1 className="text-white-100 font-mono font-bold text-5xl tracking-wide">
+      <hgroup className="mx-6 sm:mx-12 py-12 flex flex-col sm:gap-12 gap-6">
+        <h2 className="text-white-100 font-mono font-bold text-5xl tracking-wide">
           Who I am.
-        </h1>
-        <p className="text-light-blue-100 font-mont text-lg sm:text-2xl lg:text-3xl tracking-wide leading-loose">
+        </h2>
+        <p className="text-light-blue-100 font-mont text-lg sm:text-xl lg:text-2xl tracking-wide leading-loose">
           I'm a recent CS grad from the University of Chicago, and I'm
           passionate about making people's lives easier. I love leveraging my
           technical abilities to build clean, well-thought-out solutions for
@@ -15,7 +15,7 @@ const SummaryBlock = () => {
           wear multiple hats or learn new skills— I'm eager to pick up whatever
           is necessary to get the job done.
         </p>
-      </div>
+      </hgroup>
     </div>
   );
 };

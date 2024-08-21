@@ -80,13 +80,14 @@ function WorkHistory() {
   function dropdowns(positions: Position[]) {
     return positions.map((pos, i) => (
       <div key={pos.id + "-dropdown"}>
-        <div
+        <button
+          className="w-full"
           onClick={() => {
             handleClick(i);
           }}
         >
           <div className="flex flex-row justify-between items-center">
-            <h3 className="text-light-blue-100 font-mont font-semibold tracking-wide">
+            <h3 className="text-light-blue-100 font-mont font-semibold tracking-wide sm:text-xl lg:text-2xl">
               {pos.title}
             </h3>
             <MenuArrowSVG
@@ -99,29 +100,32 @@ function WorkHistory() {
             />
           </div>
           <div className="flex flex-row justify-between">
-            <p className="text-white-100 font-mono">{pos.company}</p>
-            <p className="text-white-100 font-mont text-sm italic">
+            <p className="text-white-100 font-mono sm:text-lg lg:text-xl">
+              {pos.company}
+            </p>
+            <p className="text-white-100 font-mont text-xs sm:text-sm lg:text-lg italic">
               {pos.start + " - " + pos.end}
             </p>
           </div>
           <div
             className={
-              "text-light-blue-100 font-mont " + (pos.active ? "" : "hidden")
+              "text-light-blue-100 sm:text-sm lg:text-lg font-mont " +
+              (pos.active ? "" : "hidden")
             }
           >
             <div className="h-2"></div>
             <ul>
               {pos.description.map((item, index) => (
-                <div key={pos.id + "-dropdown-description" + index}>
-                  <li key={pos.id + index}>{item}</li>
-                  <div key={pos.id + index + "spacer"} className="h-2"></div>
-                </div>
+                <li key={pos.id + index} className="my-2 flex justify-start">
+                  {item}
+                </li>
               ))}
             </ul>
+            <div className="h-2"></div>
           </div>
-        </div>
+        </button>
         {i !== positions.length - 1 ? (
-          <div className="h-px my-2 bg-light-blue-100"></div>
+          <div className="h-px my-3 bg-light-blue-100"></div>
         ) : null}
       </div>
     ));
@@ -130,7 +134,7 @@ function WorkHistory() {
   function cards(positions: Position[]) {
     return positions.map((pos, i) => (
       <div key={pos.id + "-card"}>
-        <Card size="span">
+        <Card width="span">
           <>
             <h3 className="text-light-blue-100 font-mont font-semibold tracking-wide text-lg">
               {pos.title}
@@ -162,7 +166,7 @@ function WorkHistory() {
   return (
     <>
       <div className="hidden sm:block">
-        <Card size="span">{dropdowns(positionList)}</Card>
+        <Card width="span">{dropdowns(positionList)}</Card>
       </div>
       <div className="block sm:hidden">{cards(positionList)}</div>
     </>

@@ -6,7 +6,7 @@ import GitHubSVG from "./svg/GitHubSVG";
 const ButtonRow = () => {
   return (
     <>
-      <div className="flex flex-row sm:mx-0 mx-6">
+      <div className="flex flex-row sm:mx-0 mx-6 mb-6">
         <SocialButton
           outline={true}
           link="mailto:sdsalnave@icloud.com"
@@ -17,6 +17,7 @@ const ButtonRow = () => {
               height="50%"
             />
           }
+          ariaLabel="Send an email to sdsalnave@icloud.com"
         />
         <div className="sm:w-5 w-3"></div>
         <SocialButton
@@ -29,6 +30,7 @@ const ButtonRow = () => {
               height="50%"
             />
           }
+          ariaLabel="View Sabine Salnave's LinkedIn profile"
         />
         <div className="sm:w-5 w-3"></div>
         <SocialButton
@@ -41,6 +43,7 @@ const ButtonRow = () => {
               height="50%"
             />
           }
+          ariaLabel="View Sabine Salnave's GitHub portfolio"
         />
       </div>
     </>

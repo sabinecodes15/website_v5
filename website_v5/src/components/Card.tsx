@@ -2,15 +2,17 @@ import { ReactElement } from "react";
 
 interface Props {
   children: ReactElement | ReactElement[];
-  size: "span" | "fit";
+  width?: "span" | "fit";
+  height?: "span" | "fit";
 }
 
-function Card({ children, size = "fit" }: Props) {
+function Card({ children, width = "fit", height = "fit" }: Props) {
   return (
     <div
       className={
         "bg-teal-300 p-5 rounded shadow-xl " +
-        (size === "fit" ? "w-fit" : "w-full")
+        (width === "fit" ? "w-fit" : "w-full") +
+        (height == "fit" ? " h-fit" : " h-full")
       }
     >
       {children}

@@ -4,6 +4,7 @@ import GitHubSVG from "./svg/GitHubSVG";
 import LinkedInSVG from "./svg/LinkedInSVG";
 import MenuButtonSVG from "./svg/MenuButtonSVG";
 import ExitButtonSVG from "./svg/ExitButtonSVG";
+import SLogo from "../../public/website_v5_logo_filled.svg";
 
 function NavBar() {
   const rootStyle = document.documentElement.style;
@@ -18,43 +19,50 @@ function NavBar() {
     setIsMenuOpen(menuState);
   }
   return (
-    <div className="sticky top-0 w-full h-12 lg:h-10 bg-teal-300 flex flex-row justify-between">
-      <div className="hidden sm:flex sm:flex-row text-white-100 font-mono font-medium min-w-fit">
+    <header className="sticky top-0 w-full h-12 lg:h-10 bg-teal-300 flex flex-row justify-between">
+      <nav className="hidden sm:flex sm:flex-row text-white-100 font-mono font-medium min-w-fit">
         <a
           href="#about"
-          className="flex h-full min-w-fit items-center hover:bg-teal-200 hover:text-white-200 transition-colors p-3 sm:text-lg lg:text-sm"
+          className="flex h-full min-w-fit items-center hover:bg-teal-200 hover:text-white-200 transition-colors p-3 sm:text-lg"
         >
           Who I am.
         </a>
         <a
           href="#experience"
-          className="flex h-full min-w-fit items-center hover:bg-teal-200  hover:text-white-200 transition-colors p-3 sm:text-lg lg:text-sm"
+          className="flex h-full min-w-fit items-center hover:bg-teal-200  hover:text-white-200 transition-colors p-3 sm:text-lg"
         >
           Where I've Been.
         </a>
         <a
           href="#skills"
-          className="flex h-full min-w-fit items-center hover:bg-teal-200 hover:text-white-200 transition-colors p-3 sm:text-lg lg:text-sm"
+          className="flex h-full min-w-fit items-center hover:bg-teal-200 hover:text-white-200 transition-colors p-3 sm:text-lg"
         >
           Skills.
         </a>
-      </div>
+      </nav>
       <div className="flex sm:hidden items-center p-3">
-        <button className="active:bg-teal-200" onClick={handleClick}>
+        <button
+          className="active:bg-teal-200"
+          aria-label="Open navigation menu"
+          onClick={handleClick}
+        >
           <MenuButtonSVG classes="" />
         </button>
       </div>
       <a
-        className="w-full"
+        className="h-full flex justify-center p-2"
         onClick={() => {
           window.scrollTo(0, 0);
         }}
-      ></a>
+      >
+        <img src={SLogo} alt="Sabine Salnave Home" />
+      </a>
       <div className="flex flex-row">
         <a
           href="mailto:sdsalnave@icloud.com"
           target="_blank"
           className="flex h-full items-center hover:bg-teal-200 p-2 transition-colors"
+          aria-label="Send an email to sdsalnave@icloud.com"
         >
           <EmailSVG
             classes="fill-white-100 hover:fill-white-200"
@@ -66,6 +74,7 @@ function NavBar() {
           href="https://www.linkedin.com/in/sabine-salnave-46716a169/"
           target="_blank"
           className="flex h-full items-center hover:bg-teal-200 p-2 transition-colors"
+          aria-label="View Sabine Salnave's LinkedIn profile"
         >
           <LinkedInSVG classes="fill-white-100 hover:fill-white-200 h-6" />
         </a>
@@ -73,6 +82,7 @@ function NavBar() {
           href="https://github.com/sabinecodes15"
           target="_blank"
           className="flex h-full items-center hover:bg-teal-200 p-2 transition-colors"
+          aria-label="View Sabine Salnave's GitHub portfolio"
         >
           <GitHubSVG classes="fill-white-100 hover:fill-white-200 h-6" />
         </a>
@@ -85,8 +95,12 @@ function NavBar() {
       >
         <div className="h-full flex flex-col-reverse overflow-hidden">
           <div className="h-full w-full" onClick={handleClick}></div>
-          <div className="z-20 h-fit w-full flex flex-col rounded-t-xl bg-teal-300 fixed text-white-100 font-mono font-medium p-4">
-            <div className="flex flex-row-reverse" onClick={handleClick}>
+          <nav className="z-20 h-fit w-full flex flex-col rounded-t-xl bg-teal-300 fixed text-white-100 font-mono font-medium p-4">
+            <div
+              className="flex flex-row-reverse"
+              aria-label="Exit navigation menu"
+              onClick={handleClick}
+            >
               <ExitButtonSVG classes="" />
             </div>
             <a
@@ -107,10 +121,10 @@ function NavBar() {
             >
               Skills.
             </a>
-          </div>
+          </nav>
         </div>
       </div>
-    </div>
+    </header>
   );
 }
 
