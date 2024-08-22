@@ -4,7 +4,6 @@ import GitHubSVG from "./svg/GitHubSVG";
 import LinkedInSVG from "./svg/LinkedInSVG";
 import MenuButtonSVG from "./svg/MenuButtonSVG";
 import ExitButtonSVG from "./svg/ExitButtonSVG";
-import SLogo from "../../public/website_v5_logo_filled.svg";
 
 function NavBar() {
   const rootStyle = document.documentElement.style;
@@ -20,7 +19,7 @@ function NavBar() {
   }
   return (
     <header className="sticky top-0 w-full h-12 lg:h-10 bg-teal-300 flex flex-row justify-between">
-      <nav className="hidden sm:flex sm:flex-row text-white-100 font-mono font-medium min-w-fit">
+      <nav className="hidden sm:flex sm:flex-row flex-none text-white-100 font-mono font-medium min-w-fit">
         <a
           href="#about"
           className="flex h-full min-w-fit items-center hover:bg-teal-200 hover:text-white-200 transition-colors p-3 sm:text-lg"
@@ -40,7 +39,7 @@ function NavBar() {
           Skills.
         </a>
       </nav>
-      <div className="flex sm:hidden items-center p-3">
+      <div className="flex sm:hidden items-center p-3 flex-none">
         <button
           className="active:bg-teal-200"
           aria-label="Open navigation menu"
@@ -49,15 +48,14 @@ function NavBar() {
           <MenuButtonSVG classes="" />
         </button>
       </div>
-      <a
-        className="h-full flex justify-center p-2"
+      <button
+        className="w-full"
+        aria-label="Scroll to Top"
         onClick={() => {
           window.scrollTo(0, 0);
         }}
-      >
-        <img src={SLogo} alt="Sabine Salnave Home" />
-      </a>
-      <div className="flex flex-row">
+      ></button>
+      <div className="flex flex-row flex-none">
         <a
           href="mailto:sdsalnave@icloud.com"
           target="_blank"
