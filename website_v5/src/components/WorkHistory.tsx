@@ -116,7 +116,10 @@ function WorkHistory() {
             <div className="h-2"></div>
             <ul>
               {pos.description.map((item, index) => (
-                <li key={pos.id + index} className="my-2 flex justify-start">
+                <li
+                  key={pos.id + index}
+                  className="my-2 flex justify-start text-left"
+                >
                   {item}
                 </li>
               ))}

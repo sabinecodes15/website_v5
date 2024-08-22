@@ -10,7 +10,7 @@ function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
-    rootStyle.overflowY = isMenuOpen ? "hidden" : "auto";
+    rootStyle.touchAction = isMenuOpen ? "none" : "auto";
   }, [isMenuOpen, rootStyle]);
 
   function handleClick() {
