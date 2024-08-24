@@ -36,8 +36,8 @@ function WorkHistory() {
     end: "Aug 22",
     description: [
       "▸	Streamlined administrative workflows with a React and Ruby-on-Rails based asset management system, shortening time spent managing 50+ files",
-      "▸	Increased donor engagement on https://watsi.org/fund-treatments by implementing filtering across 13 different countries, maximizing completed donations by exposing prospective donors to profiles that better suit their interests",
-      "▸	Facilitated better patient discovery by adding 3 new sort parameters, which allowed donors to more easily find individuals to fund out of over 100 possible profiles",
+      "▸	Increased donor engagement by implementing filtering for patient profiles across 13 different countries, maximizing completed donations by exposing prospective donors to cases they're interested in",
+      "▸	Facilitated better patient discovery by adding 3 new sort parameters, allowing donors to more easily find individuals to fund out of over 100 possible profiles",
     ],
     active: false,
   };
@@ -81,7 +81,7 @@ function WorkHistory() {
     return positions.map((pos, i) => (
       <div key={pos.id + "-dropdown"}>
         <button
-          className="w-full"
+          className="w-full bg-transparent"
           onClick={() => {
             handleClick(i);
           }}

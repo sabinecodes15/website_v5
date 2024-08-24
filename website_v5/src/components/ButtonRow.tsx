@@ -6,13 +6,13 @@ import GitHubSVG from "./svg/GitHubSVG";
 const ButtonRow = () => {
   return (
     <>
-      <div className="flex flex-row sm:mx-0 mx-6 mb-6">
+      <div className="flex flex-row sm:mx-0 mx-6 mb-6 sm:mb-0">
         <SocialButton
           outline={true}
           link="mailto:sdsalnave@icloud.com"
           img={
             <EmailSVG
-              classes="fill-light-blue-100 hover:fill-light-blue-200"
+              classes="fill-light-blue-100 hover:fill-light-blue-200 active:fill-light-blue-200"
               width="50%"
               height="50%"
             />
@@ -25,7 +25,7 @@ const ButtonRow = () => {
           link="https://www.linkedin.com/in/sabine-salnave-46716a169/"
           img={
             <LinkedInSVG
-              classes="fill-light-blue-100 hover:fill-light-blue-200"
+              classes="fill-light-blue-100 hover:fill-light-blue-200 active:fill-light-blue-200"
               width="50%"
               height="50%"
             />
@@ -38,7 +38,7 @@ const ButtonRow = () => {
           link="https://github.com/sabinecodes15"
           img={
             <GitHubSVG
-              classes="fill-light-blue-100 hover:fill-light-blue-200"
+              classes="fill-light-blue-100 hover:fill-light-blue-200 active:fill-light-blue-200"
               width="50%"
               height="50%"
             />

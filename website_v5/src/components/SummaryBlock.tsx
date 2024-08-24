@@ -5,16 +5,22 @@ const SummaryBlock = () => {
         <h2 className="text-white-100 font-mono font-bold text-5xl tracking-wide">
           Who I am.
         </h2>
-        <p className="text-light-blue-100 font-mont text-lg sm:text-xl lg:text-2xl tracking-wide leading-loose">
-          I'm a recent CS grad from the University of Chicago, and I'm
-          passionate about making people's lives easier. I love leveraging my
-          technical abilities to build clean, well-thought-out solutions for
-          challenging, irritating, and inconvenient problems. Having a multitude
-          of technological interests, I tend to gravitate toward roles related
-          to full stack and cloud infrastructure development. I'm not afraid to
-          wear multiple hats or learn new skills— I'm eager to pick up whatever
-          is necessary to get the job done.
-        </p>
+        <div className="text-light-blue-100 font-mont text-lg sm:text-xl lg:text-2xl tracking-wide leading-loose flex flex-col gap-6">
+          <p>
+            I'm a recent CS grad from the University of Chicago, and I'm
+            passionate about using technology to make people's lives easier. I
+            love building clean, well-thought-out solutions for challenging,
+            irritating, and inconvenient problems. I gravitate the most to full
+            stack job opportunities, but I'm open to learning and pursuing many
+            other types of development roles. I'm not afraid to wear multiple
+            hats or learn new skills; I'm eager to pick up whatever is necessary
+            to get the job done.
+          </p>
+          <p>
+            When I'm not in front of the computer, I'm probably working on a
+            musical/artistic project— or playing games on my Switch.
+          </p>
+        </div>
       </hgroup>
     </div>
   );

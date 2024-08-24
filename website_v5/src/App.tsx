@@ -22,7 +22,7 @@ function App() {
         </div>
         <div className="sm:hidden">
           <InfoText />
-          <div className="h-14" />
+          <div className="h-10" />
           <ButtonRow />
         </div>
       </div>

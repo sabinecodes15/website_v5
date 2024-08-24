@@ -18,23 +18,23 @@ function NavBar() {
     setIsMenuOpen(menuState);
   }
   return (
-    <header className="sticky top-0 w-full h-12 lg:h-10 bg-teal-300 flex flex-row justify-between">
+    <header className="sticky top-0 w-full h-12 lg:h-10 bg-teal-300 flex flex-row justify-between z-10">
       <nav className="hidden sm:flex sm:flex-row flex-none text-white-100 font-mono font-medium min-w-fit">
         <a
           href="#about"
-          className="flex h-full min-w-fit items-center hover:bg-teal-200 hover:text-white-200 transition-colors p-3 sm:text-lg"
+          className="flex h-full min-w-fit items-center hover:bg-teal-200 hover:text-white-200 active:bg-teal-200 active:text-white-200 transition-colors p-3 sm:text-lg"
         >
           Who I am.
         </a>
         <a
           href="#experience"
-          className="flex h-full min-w-fit items-center hover:bg-teal-200  hover:text-white-200 transition-colors p-3 sm:text-lg"
+          className="flex h-full min-w-fit items-center hover:bg-teal-200  hover:text-white-200 active:bg-teal-200 active:text-white-200 transition-colors p-3 sm:text-lg"
         >
           Where I've Been.
         </a>
         <a
           href="#skills"
-          className="flex h-full min-w-fit items-center hover:bg-teal-200 hover:text-white-200 transition-colors p-3 sm:text-lg"
+          className="flex h-full min-w-fit items-center hover:bg-teal-200 hover:text-white-200 active:bg-teal-200 active:text-white-200 transition-colors p-3 sm:text-lg"
         >
           Skills.
         </a>
@@ -45,11 +45,11 @@ function NavBar() {
           aria-label="Open navigation menu"
           onClick={handleClick}
         >
-          <MenuButtonSVG classes="" />
+          <MenuButtonSVG />
         </button>
       </div>
       <button
-        className="w-full"
+        className="w-full border-none bg-transparent"
         aria-label="Scroll to Top"
         onClick={() => {
           window.scrollTo(0, 0);
@@ -59,11 +59,11 @@ function NavBar() {
         <a
           href="mailto:sdsalnave@icloud.com"
           target="_blank"
-          className="flex h-full items-center hover:bg-teal-200 p-2 transition-colors"
+          className="flex h-full items-center hover:bg-teal-200 active:bg-teal-200 p-2 transition-colors"
           aria-label="Send an email to sdsalnave@icloud.com"
         >
           <EmailSVG
-            classes="fill-white-100 hover:fill-white-200"
+            classes="fill-white-100 hover:fill-white-200 active:fill-white-200"
             width="29"
             height="29"
           />
@@ -71,18 +71,18 @@ function NavBar() {
         <a
           href="https://www.linkedin.com/in/sabine-salnave-46716a169/"
           target="_blank"
-          className="flex h-full items-center hover:bg-teal-200 p-2 transition-colors"
+          className="flex h-full items-center hover:bg-teal-200 active:bg-teal-200 p-2 transition-colors"
           aria-label="View Sabine Salnave's LinkedIn profile"
         >
-          <LinkedInSVG classes="fill-white-100 hover:fill-white-200 h-6" />
+          <LinkedInSVG classes="fill-white-100 hover:fill-white-200 active:fill-white-200 h-6" />
         </a>
         <a
           href="https://github.com/sabinecodes15"
           target="_blank"
-          className="flex h-full items-center hover:bg-teal-200 p-2 transition-colors"
+          className="flex h-full items-center hover:bg-teal-200 active:bg-teal-200 p-2 transition-colors"
           aria-label="View Sabine Salnave's GitHub portfolio"
         >
-          <GitHubSVG classes="fill-white-100 hover:fill-white-200 h-6" />
+          <GitHubSVG classes="fill-white-100 hover:fill-white-200 active:fill-white-200 h-6" />
         </a>
       </div>
       <div
@@ -99,23 +99,23 @@ function NavBar() {
               aria-label="Exit navigation menu"
               onClick={handleClick}
             >
-              <ExitButtonSVG classes="" />
+              <ExitButtonSVG />
             </div>
             <a
               href="#about"
-              className="flex h-full items-center hover:bg-teal-200 hover:text-white-200 px-3 py-10 text-3xl sm:text-lg lg:text-sm"
+              className="flex h-full items-center hover:bg-teal-200 hover:text-white-200 active:bg-teal-200 active:text-white-200 px-3 py-10 text-3xl sm:text-lg lg:text-sm"
             >
               Who I am.
             </a>
             <a
               href="#experience"
-              className="flex h-full items-center hover:bg-teal-200  hover:text-white-200 px-3 py-10 text-3xl sm:text-lg lg:text-sm"
+              className="flex h-full items-center hover:bg-teal-200  hover:text-white-200 active:bg-teal-200 active:text-white-200 px-3 py-10 text-3xl sm:text-lg lg:text-sm"
             >
               Where I've Been.
             </a>
             <a
               href="#skills"
-              className="flex h-full items-center hover:bg-teal-200 hover:text-white-200 px-3 py-10 text-3xl sm:text-lg lg:text-sm"
+              className="flex h-full items-center hover:bg-teal-200 hover:text-white-200 active:bg-teal-200 active:text-white-200 px-3 py-10 text-3xl sm:text-lg lg:text-sm"
             >
               Skills.
             </a>
